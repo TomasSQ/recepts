@@ -18,6 +18,10 @@ li {margin-bottom: 0.5em;}
     width: 1000px;
 }
 
+@media (max-width: 1000px) {
+    .container {width: 100%}
+}
+
 .container.main-title h1 {
     margin: 0;
 }
