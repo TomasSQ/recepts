@@ -1,0 +1,40 @@
+body {
+    background: #333;
+    color: #FFF;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {padding: 0;margin: 0 0 1em 0;}
+img {display: block; margin: 0 auto 2em auto; width: auto;}
+li {margin-bottom: 0.5em;}
+
+.container {
+    border: 1px solid #222;
+    background: #EEE;
+    color: #333;
+    margin: 2em auto;
+    padding: 1em;
+    width: 1000px;
+}
+
+.container.main-title h1 {
+    margin: 0;
+}
+
+.recipe .recipe-name {
+    border-bottom: 1px solid #555;
+    padding-bottom: 0.5em;
+    text-align: right;
+}
+
+.recipe > img {
+    height: 20em;
+}
+
+.row {display: flex; justify-content: space-between;}
+.col-1 {flex-grow: 1;}
+
+.align-center {text-align: center;}
+.align-left {text-align: left;}
+.align-right {text-align: right;}
