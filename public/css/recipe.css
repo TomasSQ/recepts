@@ -10,16 +10,17 @@ img {display: block; margin: 0 auto 2em auto; width: auto;}
 li {margin-bottom: 0.5em;}
 
 .container {
-    border: 1px solid #222;
     background: #EEE;
+    border-style: solid;
+    border-color: #222;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
     color: #333;
     margin: 2em auto;
     padding: 1em;
-    width: 1000px;
-}
-
-@media (max-width: 1000px) {
-    .container {width: 100%}
+    width: calc(100% - 2em);
 }
 
 .container.main-title h1 {
@@ -33,12 +34,18 @@ li {margin-bottom: 0.5em;}
 }
 
 .recipe > img {
-    height: 20em;
+    width: 100%;
 }
 
-.row {display: flex; justify-content: space-between;}
+.row {display: block;}
 .col-1 {flex-grow: 1;}
 
 .align-center {text-align: center;}
 .align-left {text-align: left;}
 .align-right {text-align: right;}
+
+@media only screen and (min-width: 1000px) {
+    .container {border-left-width: 1px; border-right-width: 1px; width: 900px;}
+    .recipe > img { height: 20em; width: auto;}
+    .row {display: flex; justify-content: space-between;}
+}
